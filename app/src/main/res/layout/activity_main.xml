@@ -14,6 +14,31 @@
         tools:context=".MainActivity">
 
         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/VerdeMedicina"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/ic_baseline_calendario"
+                android:padding="8dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="11dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Citas"
+                android:textColor="@android:color/white"
+                android:textSize="30sp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="10dp" />
+        </LinearLayout>
+
+
+        <LinearLayout
             android:id="@+id/Citas"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -35,11 +60,12 @@
             android:backgroundTint="#FFCA28"
             android:padding="12dp"
             android:text="Agregar Cita"
-            android:textStyle="bold"
             android:textColor="@android:color/white"
-            android:textSize="20sp">
-        </Button>
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/Btn_Cita"
+            app:layout_constraintBottom_toTopOf="@id/Btn_Cita"></Button>
     </LinearLayout>
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>
